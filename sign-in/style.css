@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+
+*,
+::before,
+::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'poppins',sans-serif;
+    background-image:url("sceness.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+a{
+    color: #fff ;
+}
+
+h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color:#fff;
+}
+
+.wrapper{
+    max-width:1200px ;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.input-wrapper{
+    display: flex;
+    margin-bottom: 1rem;
+    border: 1px solid #f9f9f660;
+}
+
+.input-label{
+    margin-bottom: .5rem;
+    display: block;
+    color: #fff;
+}
+
+.input-wrapper i{
+    padding: 1rem 1.5rem;
+    font-size: 20px;
+    color: #fff;
+}
+
+.form-control{
+    border: none;
+    font-size: 1rem;
+    padding: 1rem;
+    color: #fff;
+    border-left: 1px solid #f9f9f660;
+    width: 100%;
+    background-color: #f9f6f614;
+    font-family: 'poppins',sans-serif;
+}
+
+.form-control:focus-visible{
+    outline:none;
+}
+
+.form-element{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.btn-submit{
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+    color: #fff;
+    padding: 1rem 1.025rem;
+    font-family: 'poppins',sans-serif;
+    background-color: #8cd5d9;
+    cursor: pointer;
+}
+
+.signup-link{
+    text-align: center;
+    color: black;
+    padding: 1.25rem;
+    font-weight: 800;
+}
+
+.signup-link a{
+    color:rgb(7, 85, 118) ;
+}
+
+.social-icon{
+    display: none;
+}
+@media(min-width:992px){
+/*
+    h1{
+        margin-bottom: 0;
+    }
+
+    .content{
+        flex-direction: row;
+    }
+
+    .left-content{
+        width: 30%;
+    }
+
+    .right-content{
+        width: 60%;
+        border-left: 3px solid #f9f9f660;
+        padding: 2.5rem ;
+        padding-left: 5rem;
+    }
+*/
+    .social-icons{
+        display:block ;
+        position: fixed;
+        right: 2.5rem;
+        top: 0;
+        height: 100%;
+    }
+      .social-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3rem;
+        width: 3rem;
+        border: 1px solid #f9f6f6;
+        color: #fff;
+        margin: 1rem;
+    }
+}
