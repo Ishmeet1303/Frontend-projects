@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* gradient background */
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+}
+
+.weather_container {
+    background: rgba(255, 255, 255, 0.1); /* glass effect */
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.temp {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.time_location {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.time_location span {
+    display: block;
+    font-size: 1rem;
+    opacity: 0.8;
+    margin-top: 0.3rem;
+}
+
+.condition {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* Search Section */
+nav {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.search_location {   
+    padding: 0.8rem 1rem;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1rem;
+    border-radius: 25px;
+    width: 70%;
+    transition: 0.3s;
+}
+
+.search_location::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search_location:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+nav form button {
+    background: #fff;
+    color: #2a5298;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+nav form button:hover {
+    background: #f1f1f1;
+    transform: scale(1.05);
+}
