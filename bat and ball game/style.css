@@ -1,0 +1,15 @@
+*{
+    background-color: brown;
+}
+.choice{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    margin: 10px;
+    background-color:aliceblue;
+    border-radius: 30%;
+}
+ 
+.ch{
+    height: 68px;
+}
